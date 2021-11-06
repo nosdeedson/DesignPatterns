@@ -1,4 +1,4 @@
-package EncapsulatedBehaviors.main;
+package main.simulators;
 
 import java.util.Optional;
 
@@ -11,10 +11,10 @@ import EncapsulatedBehaviors.fly.FlyRocketPowered;
 import EncapsulatedBehaviors.fly.FlyWithWings;
 import EncapsulatedBehaviors.quack.Squeak;
 
-public class MiniDuckSimulator {
+public class EncapsulatedBehaviorsSimulator {
 
-	public static void main(String[] args) {
-
+	public static void encapsulatedBehaviorsSimulator() {
+		
 		Duck mallard = new MallardDuck();
 		
 		mallard.display();
@@ -61,9 +61,5 @@ public class MiniDuckSimulator {
 		real.setFlyBehavior(new FlyNoWay("I can't fly, I broke my wings"));
 		real.performFly();
 		
-		
-		
-	
 	}
-
 }
