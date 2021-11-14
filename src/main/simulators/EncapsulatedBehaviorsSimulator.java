@@ -2,14 +2,14 @@ package main.simulators;
 
 import java.util.Optional;
 
-import EncapsulatedBehaviors.duck.Duck;
-import EncapsulatedBehaviors.duck.MallardDuck;
-import EncapsulatedBehaviors.duck.ModelDuck;
-import EncapsulatedBehaviors.duck.RealDuck;
-import EncapsulatedBehaviors.fly.FlyNoWay;
-import EncapsulatedBehaviors.fly.FlyRocketPowered;
-import EncapsulatedBehaviors.fly.FlyWithWings;
-import EncapsulatedBehaviors.quack.Squeak;
+import encapsulatedBehaviors.duck.Duck;
+import encapsulatedBehaviors.duck.MallardDuck;
+import encapsulatedBehaviors.duck.ModelDuck;
+import encapsulatedBehaviors.duck.RealDuck;
+import encapsulatedBehaviors.fly.FlyNoWay;
+import encapsulatedBehaviors.fly.FlyRocketPowered;
+import encapsulatedBehaviors.fly.FlyWithWings;
+import encapsulatedBehaviors.quack.Squeak;
 
 public class EncapsulatedBehaviorsSimulator {
 

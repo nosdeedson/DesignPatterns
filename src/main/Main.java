@@ -1,6 +1,7 @@
 package main;
 
 import main.simulators.SingletonCreator;
+import main.simulators.StarbuzzStore;
 import singleton.WhoAmI;
 
 public class Main {
@@ -13,10 +14,14 @@ public class Main {
 //		WeatherStation.weatherStation();
 		
 		/** Singleton */
-		WhoAmI i = SingletonCreator.whoAmICreator("I was created right now!!");
-		System.out.println(i.toString());
-		SingletonCreator.sigletonWorking();
-		System.out.println(i.toString());
-	}
+//		WhoAmI i = SingletonCreator.whoAmICreator("I was created right now!!");
+//		System.out.println(i.toString());
+//		SingletonCreator.sigletonWorking();
+//		System.out.println(i.toString());
+		
+		/** decorators */
+		
+		StarbuzzStore.makeCoffes();
+}
 
 }
