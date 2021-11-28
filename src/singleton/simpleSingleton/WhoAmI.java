@@ -1,4 +1,4 @@
-package singleton;
+package singleton.simpleSingleton;
 
 public class WhoAmI {
 	

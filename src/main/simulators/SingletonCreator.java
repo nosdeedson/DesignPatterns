@@ -1,6 +1,6 @@
 package main.simulators;
 
-import singleton.WhoAmI;
+import singleton.simpleSingleton.WhoAmI;
 
 public class SingletonCreator {
 
