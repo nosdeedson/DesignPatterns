@@ -105,7 +105,7 @@ public class Main {
 // 		facade.watchMovie();
 // 		facade.endMovie();
 		
-		/* Making beverage */
+		/* Making beverage using template method */
 		MakingBeverage.makingBeverage();
 		
 		

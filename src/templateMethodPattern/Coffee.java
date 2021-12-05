@@ -1,4 +1,4 @@
-package encapsulatingAlgorithmsPattern;
+package templateMethodPattern;
 
 import javax.swing.JOptionPane;
 

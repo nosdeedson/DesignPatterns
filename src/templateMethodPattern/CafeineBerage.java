@@ -1,4 +1,4 @@
-package encapsulatingAlgorithmsPattern;
+package templateMethodPattern;
 
 public abstract class CafeineBerage {
 

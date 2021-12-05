@@ -1,8 +1,8 @@
 package main.simulators;
 
-import encapsulatingAlgorithmsPattern.CafeineBerage;
-import encapsulatingAlgorithmsPattern.Coffee;
-import encapsulatingAlgorithmsPattern.Tea;
+import templateMethodPattern.CafeineBerage;
+import templateMethodPattern.Coffee;
+import templateMethodPattern.Tea;
 
 public class MakingBeverage {
 
