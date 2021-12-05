@@ -1,10 +1,26 @@
 package main;
 
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+import facadePattern.eletronics.Amplifier;
+import facadePattern.eletronics.CdPlayer;
+import facadePattern.eletronics.DvdPlayer;
+import facadePattern.eletronics.PopcornPopper;
+import facadePattern.eletronics.Projector;
+import facadePattern.eletronics.Screen;
+import facadePattern.eletronics.TheaterLights;
+import facadePattern.eletronics.Tuner;
+import facadePattern.facade.HomeTheaterFacade;
 import factoryPattern.factoryMethod.ChicagoStylePizzaStore;
 import factoryPattern.factoryMethod.NYStylePizzaStore;
 import factoryPattern.ingredientFactory.ChicagoPizzaIngredientFactory;
 import factoryPattern.ingredientFactory.NYPizzaIngredientFactory;
 import factoryPattern.simplefactory.SimplePizzaFactory;
+import main.simulators.AdapterSimulator;
+import main.simulators.HomeTheaterWithoutFacadeSimulator;
+import main.simulators.MakingBeverage;
 import main.simulators.PizzaFactoryMethodStore;
 import main.simulators.RemoteControlSimulator;
 import main.simulators.SimplePizzaStore;
@@ -59,11 +75,38 @@ public class Main {
 //		chicagoStore.delivering("pepperoni");
 		
 		/** Command pattern*/
-		RemoteControlSimulator.remoteControlSimulator();
+//		RemoteControlSimulator.remoteControlSimulator();
 		
+		/* adapter pattern*/
+//		AdapterSimulator.testingAdapter();
 		
+		/* home theater without facade*/
+//		PopcornPopper pop = new PopcornPopper();
+//		TheaterLights lights = new TheaterLights();
+//		DvdPlayer dvd = new DvdPlayer();
+//		Projector projector = new Projector(dvd);
+//		Screen screen = new Screen();
+//		Amplifier amplifier = new Amplifier(new Tuner(), dvd, new CdPlayer());
+//		
+//		HomeTheaterWithoutFacadeSimulator.testDriveHomeTheaterWatchMovie(pop, lights, screen, projector, amplifier);
+//		HomeTheaterWithoutFacadeSimulator.testDriveHomeTheaterTurnOffMovie(pop, lights, screen, projector, amplifier);
 		
+		/* Using facade*/
+//		Tuner tuner  = new Tuner();
+//		DvdPlayer dvd = new DvdPlayer();
+//		CdPlayer cd = new CdPlayer();
+//		Amplifier amplifier = new Amplifier(tuner, dvd, cd);
+//		
+//		Screen screen = new Screen();
+//		PopcornPopper popcornPopper = new PopcornPopper();
+//		TheaterLights theaterLights = new TheaterLights();
+//		Projector projector = new Projector(dvd);
+// 		HomeTheaterFacade facade = new HomeTheaterFacade(amplifier, screen, popcornPopper, theaterLights, projector);
+// 		facade.watchMovie();
+// 		facade.endMovie();
 		
+		/* Making beverage */
+		MakingBeverage.makingBeverage();
 		
 		
 		
