@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
+import compositePattern.Directory;
 import facadePattern.eletronics.Amplifier;
 import facadePattern.eletronics.CdPlayer;
 import facadePattern.eletronics.DvdPlayer;
@@ -18,7 +19,12 @@ import factoryPattern.factoryMethod.NYStylePizzaStore;
 import factoryPattern.ingredientFactory.ChicagoPizzaIngredientFactory;
 import factoryPattern.ingredientFactory.NYPizzaIngredientFactory;
 import factoryPattern.simplefactory.SimplePizzaFactory;
+import iteratorPattern.collectionsToHandle.DinnerMenu;
+import iteratorPattern.collectionsToHandle.PancakeHouseMenu;
 import main.simulators.AdapterSimulator;
+import main.simulators.CompositeSimulator;
+import main.simulators.WaitressCollectionsWithoutIterator;
+import main.simulators.WaitressWithIterator;
 import main.simulators.HomeTheaterWithoutFacadeSimulator;
 import main.simulators.MakingBeverage;
 import main.simulators.PizzaFactoryMethodStore;
@@ -106,10 +112,26 @@ public class Main {
 // 		facade.endMovie();
 		
 		/* Making beverage using template method */
-		MakingBeverage.makingBeverage();
+//		MakingBeverage.makingBeverage();
 		
+		/* Handling collections without iterator*/		
+//		WaitressCollectionsWithoutIterator.printMenus();
+		/* handling collections with iterator*/
+//		PancakeHouseMenu pancakeMenu = new PancakeHouseMenu();
+//		DinnerMenu dinnerMenu = new DinnerMenu();
+//		WaitressWithIterator waitress = new WaitressWithIterator(pancakeMenu, dinnerMenu);
+//		waitress.printMenu();
+//		
+//		waitress.removeDinnerMenu();
+//		waitress.removePancakeMenu();
+//		
+//		waitress.printMenu();
 		
-		
+		/*The composite pattern*/
+		Directory directory = new Directory("Documents");
+		CompositeSimulator simulator = new CompositeSimulator(directory);
+		simulator.create();
+		simulator.printNamesFiles(directory);
 	}
 
 }
