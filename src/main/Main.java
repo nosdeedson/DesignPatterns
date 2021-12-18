@@ -23,6 +23,9 @@ import iteratorPattern.collectionsToHandle.DinnerMenu;
 import iteratorPattern.collectionsToHandle.PancakeHouseMenu;
 import main.simulators.AdapterSimulator;
 import main.simulators.CompositeSimulator;
+import main.simulators.GumBallTestDriverWithStatePattern;
+import main.simulators.GumballTestDriver;
+import main.simulators.GumballTestDriverWithAbstractClass;
 import main.simulators.WaitressCollectionsWithoutIterator;
 import main.simulators.WaitressWithIterator;
 import main.simulators.HomeTheaterWithoutFacadeSimulator;
@@ -128,10 +131,47 @@ public class Main {
 //		waitress.printMenu();
 		
 		/*The composite pattern*/
-		Directory directory = new Directory("Documents");
-		CompositeSimulator simulator = new CompositeSimulator(directory);
-		simulator.create();
-		simulator.printNamesFiles(directory);
+//		Directory directory = new Directory("Documents");
+//		CompositeSimulator simulator = new CompositeSimulator(directory);
+//		simulator.create();
+//		simulator.printNamesFiles(directory);
+		
+		/* without state patter*/
+//		GumballTestDriver.testDriver();
+		
+		/* with state using interface*/
+//		GumBallTestDriverWithStatePattern.gumballTestDriver();
+		
+		/* with state using an abstract class*/
+		
+		GumballTestDriverWithAbstractClass.tesdDriver();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }

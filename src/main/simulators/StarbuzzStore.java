@@ -17,6 +17,7 @@ public class StarbuzzStore {
 	
 		HouseBlend houseBlend = new HouseBlend("I am a simple houseblend. Without decoration",
 				new Small("Small", 1.0));
+		
 		System.out.println(houseBlend.getDescription());
 		System.out.println("House Blend costs: " + houseBlend.cost());
 		

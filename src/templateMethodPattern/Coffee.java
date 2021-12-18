@@ -16,6 +16,7 @@ public class Coffee extends CafeineBerage {
 	
 	@Override
 	public boolean clientWantsCondiments() {
+		
 		int result = JOptionPane.showConfirmDialog(null, "Add condment? ", null, JOptionPane.YES_NO_OPTION);
 		if ( result == 0) {			
 			return true;
