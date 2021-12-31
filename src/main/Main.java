@@ -1,39 +1,6 @@
 package main;
 
-import java.util.Scanner;
-
-import javax.swing.JOptionPane;
-
-import compositePattern.Directory;
-import facadePattern.eletronics.Amplifier;
-import facadePattern.eletronics.CdPlayer;
-import facadePattern.eletronics.DvdPlayer;
-import facadePattern.eletronics.PopcornPopper;
-import facadePattern.eletronics.Projector;
-import facadePattern.eletronics.Screen;
-import facadePattern.eletronics.TheaterLights;
-import facadePattern.eletronics.Tuner;
-import facadePattern.facade.HomeTheaterFacade;
-import factoryPattern.factoryMethod.ChicagoStylePizzaStore;
-import factoryPattern.factoryMethod.NYStylePizzaStore;
-import factoryPattern.ingredientFactory.ChicagoPizzaIngredientFactory;
-import factoryPattern.ingredientFactory.NYPizzaIngredientFactory;
-import factoryPattern.simplefactory.SimplePizzaFactory;
-import iteratorPattern.collectionsToHandle.DinnerMenu;
-import iteratorPattern.collectionsToHandle.PancakeHouseMenu;
-import main.simulators.AdapterSimulator;
-import main.simulators.CompositeSimulator;
-import main.simulators.GumBallTestDriverWithStatePattern;
-import main.simulators.GumballTestDriver;
-import main.simulators.GumballTestDriverWithAbstractClass;
-import main.simulators.WaitressCollectionsWithoutIterator;
-import main.simulators.WaitressWithIterator;
-import main.simulators.HomeTheaterWithoutFacadeSimulator;
-import main.simulators.MakingBeverage;
-import main.simulators.PizzaFactoryMethodStore;
-import main.simulators.RemoteControlSimulator;
-import main.simulators.SimplePizzaStore;
-import main.simulators.ThreadSingletonCreator;
+import main.simulators.CompoundPatternSimulator;
 
 public class Main {
 
@@ -144,24 +111,33 @@ public class Main {
 		
 		/* with state using an abstract class*/
 		
-		GumballTestDriverWithAbstractClass.tesdDriver();
+//		GumballTestDriverWithAbstractClass.tesdDriver();
+		
+		/*compound pattern just a example */
+		
+		CompoundPatternSimulator compound = new CompoundPatternSimulator();
+		
+		/*With adapter*/
+		//compound.ducksQuacking();
 		
 		
+		/*with adapter and decorator*/
+//		compound.ducksWithAdapterDecorator();
 		
+		/*with adapter and factory*/
+//		compound.duckWithAdapterFactory();
 		
+		/*with adapter decorator factory*/
+//		compound.duckWithAdapterDecoratorFactory();
 		
+		/* with adapter and decorator factory composite*/
+//		compound.duckWithAdapterDecoratorFactoryComposite();
 		
+		/*whit adapter, decorator, factory, composite and observer*/
+		compound.duckWithAdapterDecoratorFactoryCompositeObserver();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		/*just one duck*/
+//		compound.justOneDuck();
 		
 		
 		
