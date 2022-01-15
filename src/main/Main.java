@@ -1,6 +1,9 @@
 package main;
 
 import main.simulators.CompoundPatternSimulator;
+import main.simulators.StrategySimulator;
+import strategyPattern.Operation;
+import strategyPattern.RequestOperation;
 
 public class Main {
 
@@ -115,7 +118,7 @@ public class Main {
 		
 		/*compound pattern just a example */
 		
-		CompoundPatternSimulator compound = new CompoundPatternSimulator();
+//		CompoundPatternSimulator compound = new CompoundPatternSimulator();
 		
 		/*With adapter*/
 		//compound.ducksQuacking();
@@ -134,10 +137,28 @@ public class Main {
 //		compound.duckWithAdapterDecoratorFactoryComposite();
 		
 		/*whit adapter, decorator, factory, composite and observer*/
-		compound.duckWithAdapterDecoratorFactoryCompositeObserver();
+//		compound.duckWithAdapterDecoratorFactoryCompositeObserver();
 		
 		/*just one duck*/
 //		compound.justOneDuck();
+		
+		RequestOperation operation = new RequestOperation(Operation.sum, 23D, 78D);
+		
+		StrategySimulator.calculate(operation);
+		
+		operation = new RequestOperation(Operation.divide, 34D, 8D);
+		
+		StrategySimulator.calculate(operation);
+		
+		operation = new RequestOperation(Operation.substract, 45D, 31D);
+		
+		StrategySimulator.calculate(operation);
+		
+		operation = new RequestOperation(Operation.multiply, 34D, 8D);
+		
+		StrategySimulator.calculate(operation);
+		
+		
 		
 		
 		
